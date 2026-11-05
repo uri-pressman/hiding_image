@@ -83,10 +83,12 @@ if __name__ == "__main__":
     with open("test.bmp", "wb") as f:
         f.write(dummy_bmp_header + dummy_pixels)
 
-    text_to_hide = b"Hello, this is a secret message!"
+    text_to_hide = b"method 1 worked"
 
     # Hide using Method 1
-    hide_method_1("test.bmp", "output_m1.bmp", text_to_hide)
+    hide_method_1(r"C:\Users\talmid\Downloads\cat.bmp", r"C:\Users\talmid\Downloads\hidden.bmp", text_to_hide)
+
+    text_to_hide = b"method 2 worked"
 
     # Hide using Method 2
-    hide_method_2("test.bmp", "output_m2.bmp", text_to_hide)
+    hide_method_2(r"C:\Users\talmid\Downloads\cat2.bmp", r"C:\Users\talmid\Downloads\hidden2.bmp", text_to_hide)
